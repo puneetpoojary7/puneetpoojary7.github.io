@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Puneet Dhananjay Poojary — B.Tech IT student at MIT Manipal. Frontend Developer and AI enthusiast. Personal profile page." />
+  <title>Puneet Dhananjay Poojary</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👤</text></svg>" />
+
+  <!-- Google Fonts: Space Grotesk (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Phosphor Icons (CSS-only, no JS needed for static display) -->
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ════════════════════════════════
+       NAV
+  ═════════════════════════════════ -->
+  <nav id="navbar" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">PDP<span class="dot">.</span></a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false">
+        <span class="burger"></span>
+        <span class="burger"></span>
+        <span class="burger"></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#about"     class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills"    class="nav-link">Skills</a></li>
+        <li><a href="#interests" class="nav-link">Interests</a></li>
+        <li><a href="#contact"   class="nav-link nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- ════════════════════════════════
+       SECTION 1 — HERO
+  ═════════════════════════════════ -->
+  <header id="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <!-- Profile photo: /images/profile.jpg — recommended 400×400 px, square, JPEG, under 200 KB -->
+      <div class="photo-ring">
+        <img
+          src="images/profile.jpg"
+          alt="Portrait photograph of Puneet Dhananjay Poojary"
+          class="profile-photo"
+          width="160"
+          height="160"
+        />
+      </div>
+
+      <h1>Puneet Dhananjay<br /><span class="name-accent">Poojary</span></h1>
+
+      <p class="tagline">
+        B.Tech IT &nbsp;·&nbsp; MIT Manipal
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#about"   class="btn btn-primary">About Me</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-arrow" aria-label="Scroll down to About section">
+      <i class="ph ph-arrow-down" aria-hidden="true"></i>
+    </a>
+  </header>
+
+
+  <main>
+
+    <!-- ════════════════════════════════
+         SECTION 2 — ABOUT ME
+    ═════════════════════════════════ -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <p class="sec-eyebrow">01 / About</p>
+        <h2 id="about-heading" class="sec-title">About Me</h2>
+
+        <div class="about-card card">
+          <div class="about-avatar" aria-hidden="true">
+            <i class="ph ph-user-circle"></i>
+          </div>
+          <div class="about-body">
+            <p>
+              Hi! I'm Puneet — a first-year B.Tech Information Technology student at
+              <strong>Manipal Institute of Technology, Manipal</strong>, fuelled by a
+              genuine love for building things that live on the internet. Whether it's
+              redesigning live production websites, crafting AI agents, or digging into
+              large datasets, I bring curiosity and care to everything I ship.
+            </p>
+            <p>
+              I thrive on challenges — from competing in national cybersecurity CTFs to
+              volunteering at large-scale college events — and I'm always looking for the
+              next problem worth solving. Based in <strong>Mangaluru, Karnataka</strong>,
+              I'm actively seeking internship opportunities where I can contribute, grow
+              fast, and work alongside people who care about quality.
+            </p>
+
+            <div class="about-chips">
+              <span class="chip"><i class="ph ph-map-pin" aria-hidden="true"></i> Mangaluru, Karnataka</span>
+              <span class="chip"><i class="ph ph-graduation-cap" aria-hidden="true"></i> CGPA 8.12</span>
+              <span class="chip"><i class="ph ph-envelope" aria-hidden="true"></i> puneetdp7@gmail.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ════════════════════════════════
+         SECTION 3 — EDUCATION & PROFESSIONAL
+    ═════════════════════════════════ -->
+    <section id="education" class="section-alt" aria-labelledby="education-heading">
+      <div class="container">
+        <p class="sec-eyebrow">02 / Background</p>
+        <h2 id="education-heading" class="sec-title">Education &amp; Experience</h2>
+
+        <div class="timeline">
+
+          <!-- Work experience -->
+          <article class="tl-item" aria-label="Freelance Frontend Developer at WiseWealthIndia">
+            <div class="tl-dot work" aria-hidden="true"><i class="ph ph-briefcase"></i></div>
+            <div class="tl-card card">
+              <div class="tl-top">
+                <div>
+                  <h3 class="tl-role">Freelance Frontend Developer</h3>
+                  <p class="tl-org">WiseWealthIndia — wisewealthindia.com &nbsp;·&nbsp; Remote</p>
+                </div>
+                <span class="pill-year">June 2026</span>
+              </div>
+              <p class="tl-desc">
+                Redesigned and rebuilt the complete frontend of a live wealth-advisory website —
+                delivered in one week. Engineered the UI with <strong>Next.js 15</strong>, React,
+                TypeScript and Tailwind CSS; added <strong>GSAP + Framer Motion</strong> animations
+                and <strong>Three.js</strong> for interactive 3D visualisation.
+              </p>
+              <div class="tag-row">
+                <span class="tag">Next.js 15</span><span class="tag">React</span>
+                <span class="tag">TypeScript</span><span class="tag">Tailwind CSS</span>
+                <span class="tag">GSAP</span><span class="tag">Three.js</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- B.Tech -->
+          <article class="tl-item" aria-label="B.Tech at Manipal Institute of Technology">
+            <div class="tl-dot edu" aria-hidden="true"><i class="ph ph-graduation-cap"></i></div>
+            <div class="tl-card card">
+              <div class="tl-top">
+                <div>
+                  <h3 class="tl-role">B.Tech — Information Technology</h3>
+                  <p class="tl-org">Manipal Institute of Technology (MIT), Manipal</p>
+                </div>
+                <span class="pill-year">2024 – 2028</span>
+              </div>
+              <ul class="tl-bullets" role="list">
+                <li><i class="ph ph-star" aria-hidden="true"></i> CGPA: <strong>8.12</strong> after 4th Semester</li>
+                <li><i class="ph ph-trophy" aria-hidden="true"></i> MET All India Rank: <strong>2498</strong></li>
+              </ul>
+              <p class="tl-courses-label">Key coursework</p>
+              <div class="tag-row">
+                <span class="tag">Data Structures &amp; Algorithms</span>
+                <span class="tag">Intro to AI</span>
+                <span class="tag">DBMS</span>
+                <span class="tag">Computer Networks</span>
+                <span class="tag">OOP (Java)</span>
+                <span class="tag">Data Analytics</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 12th -->
+          <article class="tl-item" aria-label="12th Grade at KSEAB">
+            <div class="tl-dot edu" aria-hidden="true"><i class="ph ph-books"></i></div>
+            <div class="tl-card card">
+              <div class="tl-top">
+                <div>
+                  <h3 class="tl-role">12th Grade — PCM</h3>
+                  <p class="tl-org">Karnataka Secondary Education Examination Board (KSEAB)</p>
+                </div>
+                <span class="pill-year">2024</span>
+              </div>
+              <ul class="tl-bullets" role="list">
+                <li><i class="ph ph-medal" aria-hidden="true"></i> Score: <strong>91%</strong></li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- 10th -->
+          <article class="tl-item" aria-label="10th Grade at ICSE">
+            <div class="tl-dot edu" aria-hidden="true"><i class="ph ph-books"></i></div>
+            <div class="tl-card card">
+              <div class="tl-top">
+                <div>
+                  <h3 class="tl-role">10th Grade</h3>
+                  <p class="tl-org">ICSE Board</p>
+                </div>
+                <span class="pill-year">2022</span>
+              </div>
+              <ul class="tl-bullets" role="list">
+                <li><i class="ph ph-medal" aria-hidden="true"></i> Score: <strong>94.8%</strong></li>
+              </ul>
+            </div>
+          </article>
+
+        </div><!-- /timeline -->
+      </div>
+    </section>
+
+
+    <!-- ════════════════════════════════
+         SECTION 4 — SKILLS
+    ═════════════════════════════════ -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <p class="sec-eyebrow">03 / Toolbox</p>
+        <h2 id="skills-heading" class="sec-title">Skills</h2>
+
+        <div class="skills-grid">
+
+          <div class="skill-cat card">
+            <h3 class="cat-label"><i class="ph ph-code" aria-hidden="true"></i> Languages</h3>
+            <div class="pills" role="list">
+              <span class="pill" role="listitem">Python</span>
+              <span class="pill" role="listitem">Java</span>
+              <span class="pill" role="listitem">C</span>
+              <span class="pill" role="listitem">C++</span>
+              <span class="pill" role="listitem">SQL</span>
+              <span class="pill" role="listitem">Verilog</span>
+              <span class="pill" role="listitem">HTML5</span>
+              <span class="pill" role="listitem">CSS3</span>
+              <span class="pill" role="listitem">JavaScript</span>
+              <span class="pill" role="listitem">TypeScript</span>
+            </div>
+          </div>
+
+          <div class="skill-cat card">
+            <h3 class="cat-label"><i class="ph ph-globe" aria-hidden="true"></i> Frontend</h3>
+            <div class="pills" role="list">
+              <span class="pill" role="listitem">Next.js 15</span>
+              <span class="pill" role="listitem">React</span>
+              <span class="pill" role="listitem">Tailwind CSS</span>
+              <span class="pill" role="listitem">GSAP</span>
+              <span class="pill" role="listitem">Framer Motion</span>
+              <span class="pill" role="listitem">Three.js</span>
+            </div>
+          </div>
+
+          <div class="skill-cat card">
+            <h3 class="cat-label"><i class="ph ph-brain" aria-hidden="true"></i> AI &amp; Data</h3>
+            <div class="pills" role="list">
+              <span class="pill" role="listitem">Pandas</span>
+              <span class="pill" role="listitem">NumPy</span>
+              <span class="pill" role="listitem">Matplotlib</span>
+              <span class="pill" role="listitem">Seaborn</span>
+              <span class="pill" role="listitem">statsmodels</span>
+              <span class="pill" role="listitem">Apriori</span>
+              <span class="pill" role="listitem">ARIMA</span>
+            </div>
+          </div>
+
+          <div class="skill-cat card">
+            <h3 class="cat-label"><i class="ph ph-wrench" aria-hidden="true"></i> Tools &amp; CS</h3>
+            <div class="pills" role="list">
+              <span class="pill" role="listitem">Git &amp; GitHub</span>
+              <span class="pill" role="listitem">JavaFX</span>
+              <span class="pill" role="listitem">Maven</span>
+              <span class="pill" role="listitem">Cisco Packet Tracer</span>
+              <span class="pill" role="listitem">DSA</span>
+              <span class="pill" role="listitem">Minimax / Alpha-Beta</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ════════════════════════════════
+         SECTION 5 — INTERESTS / HOBBIES
+    ═════════════════════════════════ -->
+    <section id="interests" class="section-alt" aria-labelledby="interests-heading">
+      <div class="container">
+        <p class="sec-eyebrow">04 / Beyond Code</p>
+        <h2 id="interests-heading" class="sec-title">Interests &amp; Hobbies</h2>
+
+        <div class="interests-row">
+
+          <div class="interest-card card" aria-label="Cybersecurity and CTF">
+            <div class="int-icon" aria-hidden="true"><i class="ph ph-shield-check"></i></div>
+            <h3>Cybersecurity &amp; CTF</h3>
+            <p>Competing in OSINT and Digital Forensics challenges — 2× podium at CITADEL CTF.</p>
+          </div>
+
+          <div class="interest-card card" aria-label="Artificial Intelligence">
+            <div class="int-icon" aria-hidden="true"><i class="ph ph-robot"></i></div>
+            <h3>Artificial Intelligence</h3>
+            <p>Exploring adversarial search, game-playing agents, and intelligent decision-making systems.</p>
+          </div>
+
+          <div class="interest-card card" aria-label="Data Analytics">
+            <div class="int-icon" aria-hidden="true"><i class="ph ph-chart-bar"></i></div>
+            <h3>Data Analytics</h3>
+            <p>Finding hidden stories in large datasets using Python — sales trends, behaviour patterns, forecasting.</p>
+          </div>
+
+          <div class="interest-card card" aria-label="Tech Fests and Events">
+            <div class="int-icon" aria-hidden="true"><i class="ph ph-trophy"></i></div>
+            <h3>Tech Fests &amp; Events</h3>
+            <p>Participating in national tech-hunt competitions and volunteering at large-scale cultural fests.</p>
+          </div>
+
+          <div class="interest-card card" aria-label="Frontend and UI Design">
+            <div class="int-icon" aria-hidden="true"><i class="ph ph-paint-brush"></i></div>
+            <h3>UI &amp; Frontend Design</h3>
+            <p>Crafting polished, animated web experiences — from subtle micro-interactions to immersive 3D scenes.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ════════════════════════════════
+         SECTION 6 — CONTACT
+    ═════════════════════════════════ -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container contact-container">
+        <p class="sec-eyebrow">05 / Say Hello</p>
+        <h2 id="contact-heading" class="sec-title">Get In Touch</h2>
+        <p class="contact-sub">
+          Open to internship opportunities, collaborations, or just a good tech conversation.
+          Reach out through any of the links below — I'll reply promptly.
+        </p>
+
+        <div class="contact-row">
+
+          <a href="mailto:puneetdp7@gmail.com" class="contact-btn card" id="contact-email" aria-label="Send email to Puneet">
+            <span class="contact-icon email-icon" aria-hidden="true">
+              <i class="ph ph-envelope-simple"></i>
+            </span>
+            <span class="contact-text">
+              <span class="contact-platform">Email</span>
+              <span class="contact-handle">puneetdp7@gmail.com</span>
+            </span>
+            <i class="ph ph-arrow-right contact-arrow" aria-hidden="true"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/puneet-poojary-1136373a6/" target="_blank" rel="noopener noreferrer" class="contact-btn card" id="contact-linkedin" aria-label="Visit Puneet's LinkedIn profile">
+            <span class="contact-icon linkedin-icon" aria-hidden="true">
+              <i class="ph ph-linkedin-logo"></i>
+            </span>
+            <span class="contact-text">
+              <span class="contact-platform">LinkedIn</span>
+              <span class="contact-handle">Connect with me</span>
+            </span>
+            <i class="ph ph-arrow-right contact-arrow" aria-hidden="true"></i>
+          </a>
+
+          <a href="https://www.instagram.com/puneetpoojary_/" target="_blank" rel="noopener noreferrer" class="contact-btn card" id="contact-instagram" aria-label="Visit Puneet's Instagram profile">
+            <span class="contact-icon instagram-icon" aria-hidden="true">
+              <i class="ph ph-instagram-logo"></i>
+            </span>
+            <span class="contact-text">
+              <span class="contact-platform">Instagram</span>
+              <span class="contact-handle">@puneetpoojary_</span>
+            </span>
+            <i class="ph ph-arrow-right contact-arrow" aria-hidden="true"></i>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ════════════════════════════════
+       FOOTER
+  ═════════════════════════════════ -->
+  <footer>
+    <div class="container footer-inner">
+      <p class="footer-name">Puneet Dhananjay Poojary</p>
+      <p class="footer-copy">&copy; 2026 · Built with HTML &amp; CSS</p>
+      <a href="#hero" class="back-top" aria-label="Back to top of page">
+        <i class="ph ph-arrow-up" aria-hidden="true"></i>
+      </a>
+    </div>
+  </footer>
+
+
+  <!-- Minimal vanilla JS — nav toggle + sticky shadow only -->
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const menu   = document.getElementById('navLinks');
+
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+
+    document.querySelectorAll('.nav-link').forEach(link =>
+      link.addEventListener('click', () => {
+        menu.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      })
+    );
+
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+    });
+  </script>
+
+</body>
+</html>
